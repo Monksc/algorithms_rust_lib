@@ -6,7 +6,7 @@ A library written in rust that contains common algorithms.
 ```
 ...
 [dependencies]
-algorithms = {  git = "https://github.com/Monksc/algorithms_rust_lib", rev = "a7015cb"}
+algorithms = {  git = "https://github.com/Monksc/algorithms_rust_lib", rev = "c150912"}
 ```
 
 # Examples
