@@ -1,5 +1,5 @@
 #![allow(dead_code)]
-fn seen_before_helper(min: usize, max: usize, is_before: impl Fn(usize) -> bool) -> usize {
+pub fn seen_before_helper(min: usize, max: usize, is_before: impl Fn(usize) -> bool) -> usize {
     let mut min = min;
     let mut max = max;
     while min < max {
