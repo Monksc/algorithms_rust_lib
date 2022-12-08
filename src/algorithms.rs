@@ -14,6 +14,8 @@ pub fn seen_before_helper(min: usize, max: usize, is_before: impl Fn(usize) -> b
     return min;
 }
 
+// MARK Seen before
+
 pub fn seen_before<T : PartialOrd>(arr: &Vec<T>, x: T) -> usize {
     if arr.len() == 0 {
         return 0;
