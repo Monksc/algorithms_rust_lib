@@ -30,7 +30,7 @@ pub fn seen_before_or_equal<T : PartialOrd>(arr: &Vec<T>, x: T) -> usize {
     if arr.len() == 0 {
         return 0;
     }
-    if arr[arr.len()-1] < x {
+    if arr[arr.len()-1] <= x {
         return arr.len();
     }
     seen_before_helper(0, arr.len()-1, |index| -> bool { arr[index] <= x })
@@ -50,7 +50,7 @@ pub fn seen_before_or_equal_address<T : PartialOrd>(arr: &Vec<T>, x: &T) -> usiz
     if arr.len() == 0 {
         return 0;
     }
-    if arr[arr.len()-1] < *x {
+    if arr[arr.len()-1] <= *x {
         return arr.len();
     }
     seen_before_helper(0, arr.len()-1, |index| -> bool { arr[index] <= *x })
