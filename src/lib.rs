@@ -4,8 +4,11 @@
 pub mod algorithms;
 pub use crate::algorithms::*;
 
-pub mod bfs;
-pub use crate::bfs::*;
+pub mod graph;
+pub use crate::graph::*;
+
+pub mod other;
+pub use crate::other::*;
 
 // mods::mods! {
 //     pub(super) algorithms; // Visible to the parent module
